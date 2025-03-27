@@ -339,7 +339,7 @@ async def confirm_delete_expense(message: types.Message, state: FSMContext):
 
 def register_handlers(dp: Dispatcher):
     dp.message(Command("start"))(start_cmd)
-    dp.message(lambda message: message.text == "➕ Додати статтю витратд")(add_expense)
+    dp.message(lambda message: message.text == "➕ Додати статтю витрат")(add_expense)
     dp.message(lambda message: message.text == "📊 Отримати звіт витрат за вказаний період")(get_report)
     dp.message(lambda message: message.text == "📝 Відредагувати статтю у списку витрат")(edit_expense)
     dp.message(lambda message: message.text == "❌ Видалити статтю у списку витрат")(del_expense)
