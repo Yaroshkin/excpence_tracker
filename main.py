@@ -5,6 +5,7 @@ import pandas as pd
 import io 
 from datetime import datetime
 import database, crud, schemas
+from models import Expense
 
 
 app = FastAPI()
